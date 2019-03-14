@@ -1,7 +1,7 @@
 <template>
     <modal @modal-close="handleClose">
         <card>
-            <form class="bg-white rounded-lg shadow-lg w-2/5 w-action-fields"
+            <form class="bg-white rounded-lg shadow-lg w-full w-action-fields"
                 @submit.prevent="handleUpdate"
                 autocomplete="off"
             >
