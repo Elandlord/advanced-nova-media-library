@@ -36,6 +36,17 @@
         }
     },
 
+    mounted() {
+          setInterval(function(){
+              let modal = document.getElementsByClassName('z-20')[0];
+
+              if(!modal.className.includes('w-2/5')){
+                  modal.className+= " w-2/5 ";
+              }
+              console.log(modal.className);
+          }, 100);
+      },
+
     methods: {
         handleClose () {
             this.$emit('close')
